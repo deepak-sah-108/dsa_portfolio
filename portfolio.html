@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Kumar Sah's DSA Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Navbar styling */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Content styling */
+        .container {
+            padding: 20px;
+        }
+        /* Section titles */
+        .topic-title {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+        /* Home page styling */
+        .profile {
+            text-align: center;
+            margin-top: 20px;
+       
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .container{
+            height: 610px;
+            width: 96.5%;
+        }
+        #home{
+            border: 5px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#unit1"> Introduction</a>
+        <a href="#unit2"> List Structure</a>
+        <a href="#unit3"> Stack and Queue</a>
+        <a href="#unit4"> Trees and Hashing</a>
+        <a href="#unit5"> Graph</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container" id="home">
+        <div class="profile">
+            <img src="image.jpg" alt="Profile Picture">
+            <h1>HI, I A'm Deepak Kumar Sah</h1>
+           <pre style="font-size: larger;"><h4><b> 
+                    A second-year BTech student with a strong passion for problem-solving and advanced Data Structures &Algorithms (DSA).
+                 My journey in DSA has been both challenging and immensely rewarding, as I’m captivated by how DSA concepts facilitate 
+                 efficient and optimized programming solutions. I thrive on tackling intricate coding challenges that demand analytical
+                  thinking and a sophisticated understanding of data organization. These competencies are invaluable not only in competitive
+                   programming but also in developing impactful solutions for real-world applications.</b></h4></pre>
+                <h3 style="color: chocolate;" ><b>
+                    contact details </b>
+                </h3> 
+             
+        <h4>
+            <p>ADDRESS: SRM ,POTHERI <BR>
+                        THAMARAI-421,602302 </p>
+            <p>Email: deepaksah111110@gmail.com</p>
+            <p>Contact Number: 7806867938</p> </h4>
+        </div>
+    </div>
+
+    <!-- Unit 1 - Introduction -->
+    <div class="container" id="unit1">
+        <h2 class="topic-title"> Introduction</h2>
+        <p>Programming in C - Primitive data types, Structures, Self-referential structures, Pointers and structures...
+            Structures provide a way to represent real-world entities in a program. For example, if you're working on a program for managing student data, a Student structure could group variables like name, roll number, and marks together. This makes it easier to manage and organize data as a single unit rather than handling individual variables separately
+        </p>
+        <p>Complexity - Time, Space, Trade-offs.</p>
+    <img src="https://images.javatpoint.com/ds/images/time-complexity-in-data-structure.png" alt="time complexity">
+    </div>
+
+    <!-- Unit 2 - List Structure -->
+    <div class="container" id="unit2">
+        <h2 class="topic-title"> List Structure</h2>
+        <p>Operations on List ADT - Create, Insert, Search, Delete, Display elements...</p>
+        <p>Applications - Sparse Matrix, Polynomial Arithmetic, Josephus Problem.
+         <h3>Types of List Structures</h3>
+ <h4>The two most common list structures are:</h4>
+<h3>Array-Based List:</h3>
+A list implemented using a contiguous block of memory, with elements stored in consecutive memory locations.
+It allows constant-time access to elements using an index but requires shifting elements during insertions and deletions, which can be inefficient.
+<h3>Linked List:</h3><p>
+A list where each element (or node) points to the next element in the sequence.
+Each node contains the data and a reference (or link) to the next node.</p>
+
+<img src="https://www.masaischool.com/blog/content/images/2022/06/Insertion-in-array-vs-linked-list-1.png" style="width: 350px; height: auto;" alt="Array vs Linked List">
+        </p>
+    </div>
+
+    <!-- Unit 3 - Stack and Queue -->
+    <div class="container" id="unit3">
+        <h2 class="topic-title"> Stack and Queue</h2>
+        <p>Operations on Stack ADT - Create, Push, Pop, Top; Implementation of Stack ADT...</p>
+        <p>Applications - Scheduling, Balancing Symbols, Tower of Hanoi.
+            we also preform a role play using queue
+        </p>
+        <p>Stack and Queue are two fundamental data structures in computer science, used for organizing data with different methods for adding (inserting) and removing (deleting) elements.
+
+         <h3>   1. Stack</h3>
+            Definition: A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. This means that the last element added to the stack is the first one to be 
+            
+            Operations:
+            
+            Push: Adds an element to the top of the stack.
+            Pop: Removes the element from the top of the stack.
+            Peek (or Top): Returns the element at the top without removing it.
+            Applications:
+            
+            Function call management in programming languages (keeping track of function calls in recursion).
+            Undo operations in applications (reversing recent changes).
+            Expression evaluation and syntax parsing (for balancing parentheses, converting infix expressions to postfix/prefix).
+            Visualization: Imagine a stack of plates; you add (push) plates on top, and when you remove (pop) a plate, you take the top one.
+            
+            <h3>  2. Queue </h3>
+            Definition: A queue is a linear data structure that follows the First In, First Out (FIFO) principle. This means that the first element added to the queue is the first one to be removed.
+            
+            Operations:
+            
+            Enqueue: Adds an element to the end (rear) of the queue.
+            Dequeue: Removes the element from the front of the queue.
+            Front (or Peek): Returns the element at the front without removing it.
+            Applications:
+            
+            Task scheduling (like handling processes in an operating system).
+            Handling requests in web servers.
+            Breadth-First Search (BFS) in graph traversal.
+            Visualization: Imagine a line of people waiting; the first person in line is served first, and new people join at the end.
+            
+            Would you like a deeper look at implementing these structures or examples of their use cases?</p>
+    </div>
+
+    <!-- Unit 4 - Trees and Hashing -->
+    <div class="container" id="unit4">
+        <h2 class="topic-title">Trees and Hashing</h2>
+        <p>Introduction to Trees, Binary Search Trees, AVL Trees, Heaps, Hash Functions...</p>
+        <p>Hashing Methods - Separate Chaining, Open Addressing, Linear Probing, Quadratic Probing.</p>    <h2>Tree</h2>
+        <div class="definition">
+            <h3>Definition:</h3>
+            <p>A Tree is a non-linear data structure that consists of nodes connected by edges. It has a hierarchical structure, with a single root node and various child nodes.</p>
+        </div>
+        <div class="types">
+            <h3>Types of Trees:</h3>
+            <ul>
+                <li><strong>Binary Tree:</strong> Each node has at most two children.</li>
+                <li><strong>Binary Search Tree (BST):</strong> A binary tree with a specific order: left children are less than the node, and right children are greater.</li>
+                <li><strong>AVL Tree:</strong> A self-balancing binary search tree.</li>
+                <li><strong>B-Tree:</strong> A general tree used in databases and file systems to store large amounts of data.</li>
+            </ul>
+        </div>
+        <div class="applications">
+            <h3>Applications of Trees:</h3>
+            <ul>
+                <li>Database indexing (using B-Trees)</li>
+                <li>File systems (e.g., directory structures)</li>
+                <li>Binary Search Trees for efficient searching and sorting</li>
+                <li>Trie structures for storing strings and implementing dictionaries</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Hashing Explanation -->
+        <h2>Hashing</h2>
+        <div class="definition">
+            <h3>Definition:</h3>
+            <p>Hashing is a technique used to map data to a fixed-size hash table by applying a hash function. It provides fast data retrieval by transforming data into a unique code.</p>
+        </div>
+        <div class="types">
+            <h3>Types of Hashing Techniques:</h3>
+            <ul>
+                <li><strong>Direct Hashing:</strong> Maps keys directly to a fixed position in the table.</li>
+                <li><strong>Chaining:</strong> Resolves hash collisions by creating a linked list at each table index.</li>
+                <li><strong>Open Addressing:</strong> Uses linear probing, quadratic probing, or double hashing to resolve collisions.</li>
+            </ul>
+        </div>
+        <div class="applications">
+            <h3>Applications of Hashing:</h3>
+            <ul>
+                <li>Database indexing</li>
+                <li>Cryptographic hash functions (e.g., SHA-256)</li>
+                <li>Data structures like hash tables and hash maps</li>
+                <li>Cache and memory management</li>
+    </div>
+
+    <!-- Unit 5 - Graph -->
+    <div class="container" id="unit5">
+        <h2 class="topic-title">Graph</h2>
+        <p>Introduction to Graph, Graph Traversal, Topological Sorting, Minimum Spanning Tree...</p>
+        <p>Algorithms - Prim's Algorithm, Kruskal's Algorithm, Dijkstra's Algorithm.</p>
+        <h2>Graph<h2></h2>
+        <div class="definition">
+            <h3>Definition:</h3>
+            <p>A Graph is a non-linear data structure that consists of a set of nodes (also called vertices) and a set of edges that connect pairs of nodes. It is used to model relationships between different elements in a network.</p>
+        </div>
+        <div class="types">
+            <h3>Types of Graphs:</h3>>
+            <ul>
+                <li><strong>Undirected Graph:</strong> A graph where edges have no direction, meaning the connection between two vertices is bi-directional.</li>
+                <li><strong>Directed Graph (Digraph):</strong> A graph where edges have a direction, pointing from one vertex to another.</li>
+                <li><strong>Weighted Graph:</strong> A graph where edges have weights (or costs) associated with them.</li>
+                <li><strong>Unweighted Graph:</strong> A graph where edges do not have weights.</li>
+                <li><strong>Connected Graph:</strong> A graph where there is a path between every pair of vertices.</li>
+                <li><strong>Disconnected Graph:</strong> A graph where at least one pair of vertices is not connected.</li>
+            </ul>
+        </div>
+        <div class="applications">
+            <h3>Applications of Graphs:</h3>
+            <ul>
+                <li>Social networks (e.g., representing friendships on platforms like Facebook)</li>
+                <li>Web page linking (search engines use graphs to determine page relevance)</li>
+                <li>Road and transportation networks (mapping routes and navigation)</li>
+                <li>Network routing (finding the shortest or most efficient paths)</li>
+                <li>Recommendation systems (suggesting products or connections based on relationships)</li>
+                <img src="https://images.javatpoint.com/ds/images/directed-and-undirected-graph.png" alt="">
+            </ul>
+    
+    </div>
+</body>
+</html>
